@@ -59,6 +59,9 @@ int chacha_test(void)
    if ((err = chacha_ivctr64(&st, n + 4, sizeof(n) - 4, 1)) != CRYPT_OK)                   return err;
    if ((err = chacha_crypt(&st, (unsigned char*)pt, len, out)) != CRYPT_OK)                return err;
    if (compare_testvector(out, len, ct, sizeof(ct), "CHACHA-TV3", 1))                      return CRYPT_FAIL_TESTVECTOR;
+   /* crypt in a single call using 64-bit counter with a value of 1 */
+   if ((err = chacha_memory(k, sizeof(k), 20, n + 4, sizeof(n) - 4, 1, (unsigned char*)pt, len, out)) != CRYPT_OK)                return err;
+   if (compare_testvector(out, len, ct, sizeof(ct), "CHACHA-TV4", 1))                      return CRYPT_FAIL_TESTVECTOR;
 
    return CRYPT_OK;
 #endif
