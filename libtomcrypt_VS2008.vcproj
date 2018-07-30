@@ -2575,6 +2575,10 @@
 					>
 				</File>
 				<File
+					RelativePath="src\stream\chacha\chacha_memory.c"
+					>
+				</File>
+				<File
 					RelativePath="src\stream\chacha\chacha_setup.c"
 					>
 				</File>
@@ -2590,12 +2594,20 @@
 					RelativePath="src\stream\rabbit\rabbit.c"
 					>
 				</File>
+				<File
+					RelativePath="src\stream\rabbit\rabbit_memory.c"
+					>
+				</File>
 			</Filter>
 			<Filter
 				Name="rc4"
 				>
 				<File
 					RelativePath="src\stream\rc4\rc4_stream.c"
+					>
+				</File>
+				<File
+					RelativePath="src\stream\rc4\rc4_stream_memory.c"
 					>
 				</File>
 				<File
@@ -2623,11 +2635,19 @@
 					>
 				</File>
 				<File
+					RelativePath="src\stream\salsa20\salsa20_memory.c"
+					>
+				</File>
+				<File
 					RelativePath="src\stream\salsa20\salsa20_setup.c"
 					>
 				</File>
 				<File
 					RelativePath="src\stream\salsa20\salsa20_test.c"
+					>
+				</File>
+				<File
+					RelativePath="src\stream\salsa20\xsalsa20_memory.c"
 					>
 				</File>
 				<File
@@ -2644,6 +2664,10 @@
 				>
 				<File
 					RelativePath="src\stream\sober128\sober128_stream.c"
+					>
+				</File>
+				<File
+					RelativePath="src\stream\sober128\sober128_stream_memory.c"
 					>
 				</File>
 				<File
@@ -2700,6 +2724,10 @@
 				>
 				<File
 					RelativePath="src\stream\sosemanuk\sosemanuk.c"
+					>
+				</File>
+				<File
+					RelativePath="src\stream\sosemanuk\sosemanuk_memory.c"
 					>
 				</File>
 				<File
