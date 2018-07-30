@@ -27,10 +27,10 @@ int chacha_memory(const unsigned char *key,    unsigned long keylen,  unsigned l
                   const unsigned char *iv,     unsigned long ivlen,   ulong64 counter,
                   const unsigned char *datain, unsigned long datalen, unsigned char *dataout)
 {
-   LTC_ARGCHK(ivlen <= 8 || counter < 4294967296);       /* 2**32 */
-
    chacha_state st;
    int err;
+
+   LTC_ARGCHK(ivlen <= 8 || counter < 4294967296);       /* 2**32 */
 
    if ((err = chacha_setup(&st, key, keylen, rounds)) != CRYPT_OK)       goto WIPE_KEY;
    if (ivlen > 8) {
